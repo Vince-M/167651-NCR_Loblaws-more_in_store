@@ -24,7 +24,7 @@
       <style type="text/css">
         html,
         body {
-          background-color: #fafafa;
+          background-color: #fafafa !important;
         }
         table {
           border-spacing: 0;
@@ -59,7 +59,11 @@
         }
 
         .emailHero {
-          background-color: #ffffff;
+          background-color: #fafafa;
+        }
+
+        strong {
+          font-weight: 700;
         }
 
         img {
@@ -77,20 +81,24 @@
           cursor: pointer;
         }
 
-        a:link, span.MsoHyperlink {
+        .btn {
+          color: #fafafa !important;
+          text-decoration: none;
+        }
+
+        /* a:link, span.MsoHyperlink {
           mso-style-priority:100 !important;
           color:#005cab !important;
           color:#005cab;
           text-decoration:underline !important;
-        }
+        } */
 
         .content {
           line-height: 20px;
           font-size: 16px;
         }
         .footer {
-          background-color: #fafafa;
-          /* color: #005cab; */
+          background-color: #fafafa !important;
         }
         .column-wrapper {
           padding: 0 0 30px 0;
@@ -232,25 +240,24 @@
          body,
           table {
             background: #fafafa !important;
-            /* color: #2d2d2d !important; */
           }
           .ncrBrand {
             background-color: #005cab !important;
           }
-
+          strong {
+            font-weight: 700;
+          }
           td.emailHero {
             background-color: #fafafa !important;
           }
           hr {
             border: 1px solid #005cab !important; 
-            /* color: #fafafa !important; */
           }
           .darkmode-transparent {
             background-color: transparent !important;
           }
           [data-ogsc] body, table {
             background: #fafafa !important;
-            /* color: #005cab !important; */
           }
           [data-ogsc] h3 {
             color: #fafafa !important;
@@ -295,16 +302,16 @@
 
       <!-- PREHEADER START -->
       <div style="font-size: 0; color: #fafafa;; mso-line-height-rule: exactly; line-height: 0; display: none; max-width: 0; max-height: 0; opacity: 0; overflow: hidden; mso-hide: all;">
-        More in your Store!
+        Check out some more great new items today!
         &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
       </div>
 
-      <a class="browser" align="right" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #005cab !important; text-decoration: underline !important; text-align: right; float: right; padding: 10px 20px 10px 0;" href="##webversionurl##" target="_blank">
+      <a class="browser" align="right" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #005cab !important; text-decoration: underline !important; text-align: right; float: right; padding: 10px 20px 10px 0; margin-bottom: 20px;" href="##webversionurl##" target="_blank">
         view online
       </a>
 
       <!-- [if mso]>
-        <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;" role="presentation">
+        <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #fafafa;" role="presentation">
           <tr>
             <td style="padding: 0;">
       <![endif]-->
@@ -345,6 +352,11 @@
           <tr>
             <td style="padding: 0;">
 
+              <!--[if mso]>
+                <table width="600" align="center" style="mso-background-color: #fafafa; border-spacing: 0; bgcolor: fafafa !important; background: #fafafa !important;" role="presentation">
+                  <tr>
+                    <td width="600" valign="top" style="padding: 0;"
+              <![endif]-->
 
               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
 
@@ -355,32 +367,82 @@
                 </tr>
               </table>
 
+              <!-- [if mso]>
+                    </td>
+                  </tr>
+                </table>
+              -->
+
             </td>
           </tr>
         <!-- MORE IN STORE HEADER END -->
 
         <!-- START INTRO SECTION -->
           <tr>
-            <td  align="center" style="padding: 20px 0 30px 0; background: linear-gradient(#fafafa, #fafafa);background-color: #fafafa !important;">
-              <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0; background: linear-gradient(#fafafa, #fafafa);background-color: #fafafa !important;" role="presentation">
+            <td  align="center" style="padding: 20px 20px 40px 20px;">
+
+              <!--[if mso]>
+                <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                  <tr>
+                    <td width="600" valign="top" style="padding: 0 0 40px 0;"
+              <![endif]-->
+
+              <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
 
                 <tr>
                   <td>
+                    <h1 class="greeting" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; margin: 0 !important; text-align: left; color: #005cab; padding: 0 0 15px 0; line-height: 1;">Hi, Customer Name</h1>
 
-                    <h1 class="selection" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; margin: 0 !important; text-align: center; color: #005cab; padding: 0; line-height: 1; padding-bottom: 40px;">Now in Store!</h1>
+                    <h2 class="introHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 700; margin: 0 !important; text-align: left; color: #005cab; padding: 0; line-height: 1; padding-bottom: 20px;">More Selection for your family!</h2>
 
+                    <p class="intro" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; font-weight: 500; text-align: left; padding: 0;">At <strong>Northern</strong>, it's been so exciting to bring you no name&#174; and President's Choice&#174; products to enjoy! And now, we have <strong>EVEN MORE</strong> products for you and your family to try. Check out some great new items available today, like the President's Choice&#174; Decadent&#174; Chocolate Chip cookie, made with so many chocolate chips and real butter. And no name&#174; frozen pizza, a fun and affordable way to experience that pizzeria taste. Come on in to your local <strong>Northern</strong> store now and see what more we have in-store.</p>
                   </td>
                 </tr>
 
               </table>
+
+              <!-- [if mso]>
+                    </td>
+                  </tr>
+                </table>
+              -->
+
             </td>
           </tr>
         <!-- END INTRO SECTION -->
 
         <!-- PRODUCTS ROW 1 START -->
           <tr>
-            <td class="top-row-items" style="padding: 0; margin-bottom: 20px; display: block;">
+            <td class="top-row-items" style="padding: 0 0 40px 0; display: block;">
               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+                <!-- no name BRANDING START -->
+                <tr>
+                  <td align="center" style="display: inline-block; padding: 0;">
+        
+                    <!--[if mso]>
+                      <table width="600" align="left" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                          <td width="600" valign="top" style="padding: 0 0 40px 0;"
+                    <![endif]-->
+        
+                    <table border="0" align="left" width="600" cellspacing="0" cellpadding="0" style="border-spacing: 0; text-align: center;" role="presentation">
+                      <tr>
+                        <td class="noNameBrand" style="text-align: left; padding: 0 20px; font-size: 0;">
+                          <img src="img/no_name_logo_150x42.png" alt="no name" class="wevegotit" title="no name" width="150" border="0" style="width: 100%; max-width: 150px; border: none; float: left;"> 
+                        </td>
+                      </tr>
+                    </table>
+        
+                    <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                    <![endif]-->
+        
+                  </td>
+                </tr>
+                <!-- no name BRANDING END -->
               
                 <tr>
                   <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;">
@@ -461,8 +523,36 @@
 
         <!-- PRODUCTS ROW 2 START -->
           <tr>
-            <td class="top-row-items" style="padding: 0; margin-bottom: 20px; display: block;">
+            <td class="top-row-items" style="padding: 0 0 40px 0; display: block;">
               <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+                <!-- President's Choice BRANDING START -->
+                <tr>
+                  <td align="center" style="display: inline-block; padding: 0;">
+        
+                    <!--[if mso]>
+                      <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                          <td width="600" valign="top" style="padding: 0;;"
+                    <![endif]-->
+        
+                    <table border="0" align="center" width="600" cellspacing="0" cellpadding="0" style="border-spacing: 0; text-align: center;" role="presentation">
+                      <tr>
+                        <td class="noNameBrand" style="text-align: left; padding: 0 20px; font-size: 0;">
+                          <img src="img/pc_brand_rev_195x64.jpg" alt="no name" class="wevegotit" title="no name" width="150" border="0" style="width: 100%; max-width: 195px; border: none; float: left;"> 
+                        </td>
+                      </tr>
+                    </table>
+        
+                    <!--[if mso]>
+                      </td>
+                      </tr>
+                      </table>
+                    <![endif]-->
+        
+                  </td>
+                </tr>
+                <!-- President's Choice BRANDING END -->
               
                 <tr>
                   <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;">
@@ -543,35 +633,63 @@
 
         <!-- START PRODUCT BUTTON SECTION -->
           <tr>
-          <td  align="center" style="padding: 20px 0 30px 0; background: linear-gradient(#fafafa, #fafafa);background-color: #fafafa !important;"> <!-- align & padding -->
-            <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0; background: linear-gradient(#fafafa, #fafafa);background-color: #fafafa !important;" role="presentation"> <!-- standard & alignment -->
-
-              <tr>
-                <td>
-
-                <h2 class="selection" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; margin: 0 !important; text-align: center; color: #005cab; padding: 0; line-height: 1; padding-bottom: 40px;">More Selection . . . More Savings</h2>
-                <h3 class="selection" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; margin: 0 !important; text-align: center; color: #005cab; padding: 0; line-height: 1;">See how</h3>
-
-                </td>
-              </tr>
-
-
-              <tr>
-                <td align="center" style="padding: 0;">
-                  <table align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 30px;" role="presentation">
-
+            <td  align="center" style="padding-bottom: 60px;"> <!-- align & padding -->
+              
+              <!--[if mso]>
+                  <table width="600" align="center" style="border-spacing: 0;" role="presentation">
                     <tr>
-                      <td align="center" bgcolor="#005cab" style="color: #fafafa; background-color: #005cab; border-radius: 8px !important; padding: 16px 60px 12px 60px;">
-                        <a href="https://www.northmart.ca/saving-is-simple" target="_blank" style="font-size: 32px; font-weight: 500; letter-spacing: 1px; line-height: 1; text-decoration: none !important;  color: #fafafa !important; background-color: #005cab; border: 1px solid #005cab; display: inline-block;">Saving is simple</a>
-                      </td>
-                    </tr>
+                      <td width="600" valign="top" style="padding: 0;"
+                <![endif]-->
+              
+              <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
 
-                  </table>
-                </td>
-              </tr>
+                <tr>
+                  <td style="padding: 0 0 40px 0;">
 
-            </table>
-          </td>
+                  <h2 class="selection" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; margin: 0 !important; text-align: center; color: #005cab !important; padding: 0; line-height: 1; margin-bottom: 40px !important;">More Selection . . . More Savings</h2>
+                  <h3 class="selection" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; margin: 0 !important; text-align: center; color: #005cab !important; padding: 0; line-height: 1;">See how</h3>
+
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td align="center" style="padding: 0;">
+
+                    <!--[if mso]>
+                      <table width="600" align="center" style="mso-background-color: #fafafa; border-spacing: 0; bgcolor: fafafa !important; background: #fafafa !important;" role="presentation">
+                        <tr>
+                          <td width="600" valign="top" style="padding: 0;"
+                    <![endif]-->
+
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+
+                      <tr>
+                        <td align="center" bgcolor="#005cab" style="border-radius: 8px; color: #fafafa !important; background-color: #005cab;">
+                          <a class="btn" href="https://www.northmart.ca/saving-is-simple" target="_blank" style="font-size: 32px; font-weight: 500; letter-spacing: 1px; text-decoration: none !important;  color: #fafafa !important; background-color: #005cab; border: 1px solid #005cab; border-radius: 8px !important; padding: 16px 60px 12px 60px; display: inline-block;">Saving is simple</a>
+                        </td>
+                      </tr>
+
+                    </table>
+
+                    <!-- [if mso]>
+                          </td>
+                        </tr>
+                      </table>
+                    -->
+
+                  </td>
+                </tr>
+
+              </table>
+
+              <!-- [if mso]>
+                    </td>
+                  </tr>
+                </table>
+              -->
+
+            </td>
           </tr>
         <!-- END PRODUCT BUTTON SECTION -->
 
@@ -616,7 +734,7 @@
             <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0; text-align: center;" role="presentation">
               <tr>
                 <td class="flyerHero" style="text-align: center; padding: 0 20px; font-size: 0;">
-                  <img src="img/weve-got-it_1160x360.jpg" alt="We've Got it" class="wevegotit" title="We've Got it" width="600" border="0" style="width: 100%; max-width: 600px; border: 2px solid #ffffff;"> 
+                  <img src="img/helping_you_save_more_1160x360.png" alt="Helping you Save More" class="banner" title="Helping you Save More" width="600" border="0" style="width: 100%; max-width: 600px; border: none;"> 
                 </td>
               </tr>
             </table>
